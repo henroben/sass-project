@@ -1,5 +1,4 @@
-@import "variables";
-@import "mixins";
+@import "partials/_variables", "partials/_mixins";
 
 @include fancy-links;
 
