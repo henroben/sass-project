@@ -2,6 +2,9 @@
 
 @include fancy-links;
 
+@include google-font("Alegreya+Sans");
+@include google-font("Titillium+Web");
+
 @include apply-to-ie-6 {
   body {
     font-size: 125%;
