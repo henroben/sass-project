@@ -1,4 +1,5 @@
-@import "partials/_variables", "partials/_mixins";
+@import "partials/functions";
+@import "partials/variables", "partials/mixins";
 
 @include fancy-links;
 
@@ -14,6 +15,7 @@
 body {
   font-family: $text-font;
   color: $text-color;
+  font-size: em(18px);
   
   @include large-screens {
     font-size: 125%;
@@ -82,13 +84,28 @@ a {
   margin-right: auto;
 
   #content {
+    float: left;
+    width: 6*$col;
   }
 
   #sidebar {
+    float: right;
+    width: 2*$col;
+
+    li {
+      list-style: none;
+      padding: em(16px) em(20px);
+      border-bottom: 1px dashed #999;
+
+      &:hover {
+        background-color: #efefef;
+      }
+    }
   }
 }
 
 #footer {
+  clear: both;
   height: $footer-height;
   background-color: $ternary-color;
 }
