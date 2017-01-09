@@ -17,8 +17,8 @@ a {
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
   font-size: 1.125em;
-  color: #222222;
-  background-color: #ffffff; }
+  color: #ffffff;
+  background-color: #22222a; }
   @media only screen and (max-width: 960px) {
     body {
       font-size: 125%; } }
@@ -34,9 +34,9 @@ p {
   font-family: "Alegreya Sans", Arial, sans-serif; }
 
 a {
-  color: #f27731; }
+  color: #c24721; }
   a:hover {
-    color: #ca510d; }
+    color: #812f16; }
 
 .sub-title {
   font-style: italic; }
@@ -45,11 +45,11 @@ a {
   font-size: 1.25em; }
 
 .warning-button, .cta-button, .super-cta-button {
-  background-color: orange;
+  background-color: red;
   color: #ffffff;
   padding: 8px 12px; }
   .warning-button:hover, .cta-button:hover, .super-cta-button:hover {
-    background-color: #ffc04d; }
+    background-color: #ff4d4d; }
 
 .cta-button, .super-cta-button {
   -webkit-border-radius: 6px;
@@ -65,11 +65,11 @@ a {
   -moz-border-radius: 8px;
   border-radius: 8px;
   border: 1px solid #333;
-  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
   height: 60px;
-  background-color: #170a48; }
+  background-color: #42424a; }
   #header #main-menu li {
     display: inline; }
   #header #main-menu a {
@@ -100,11 +100,12 @@ a {
       padding: 1em 1.25em;
       border-bottom: 1px dashed #999; }
       #main #sidebar li:hover {
-        background-color: #efefef; }
+        background-color: #c24721; }
 
 #footer {
   clear: both;
   height: 90px;
-  background-color: #ccf962; }
+  background-color: #698932;
+  border-top: 5px solid #3e511e; }
 
 /*# sourceMappingURL=main.css.map */
