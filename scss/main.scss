@@ -21,9 +21,18 @@
   font-weight: bold;
 }
 
+$contrast: normal;
+
 body {
   font-family: $text-font;
-  color: $text-color;
+  @if $contrast == high {
+    color: #000000;
+  } @else if $contrast == low {
+    color: #999;
+  } @else {
+    color: $text-color;
+  }
+
   font-size: em(18px);
   
   @include large-screens {
