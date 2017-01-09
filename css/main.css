@@ -39,6 +39,18 @@
 .large {
   font-size: 18px; }
 
+.picture-2 {
+  width: 20%; }
+
+.picture-4 {
+  width: 40%; }
+
+.picture-6 {
+  width: 60%; }
+
+.picture-8 {
+  width: 80%; }
+
 a {
   font-style: italic;
   text-decoration: none; }
