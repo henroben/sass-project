@@ -7,6 +7,13 @@ a {
 * html body {
   font-size: 125%; }
 
+.error, .critical-error, .cta-button, .super-cta-button {
+  color: red; }
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold; }
+
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
   color: #222222;
@@ -30,12 +37,21 @@ a {
   a:hover {
     color: #ca510d; }
 
-.warning-button {
+.warning-button, .cta-button, .super-cta-button {
   background-color: orange;
   color: #ffffff;
   padding: 8px 12px; }
-  .warning-button:hover {
+  .warning-button:hover, .cta-button:hover, .super-cta-button:hover {
     background-color: #ffc04d; }
+
+.cta-button, .super-cta-button {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  font-weight: bold; }
+
+.super-cta-button {
+  font-size: 1.25em; }
 
 #header {
   -webkit-border-radius: 8px;
@@ -83,3 +99,5 @@ a {
   clear: both;
   height: 90px;
   background-color: #ccf962; }
+
+/*# sourceMappingURL=main.css.map */
