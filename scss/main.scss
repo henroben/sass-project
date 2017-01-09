@@ -50,6 +50,16 @@ a {
   }
 }
 
+%hightlight {
+  font-style: italic;
+}
+
+.sub-title {
+  @extend %hightlight;
+  @extend .foo !optional;
+  font-size: em(20px);
+}
+
 .warning-button {
   @include warning;
   padding: 8px 12px;
