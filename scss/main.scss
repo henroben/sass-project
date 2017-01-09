@@ -1,6 +1,19 @@
 @import "partials/functions";
 @import "partials/variables", "partials/mixins";
 
+// 1 - 6 inclusive
+@for $i from 1 through 6 {
+  .col-#{$i} {
+    width: $i * 2em;
+  }
+}
+// 1 - 5 only
+@for $i from 1 to 6 {
+  .col-#{$i} {
+    width: $i * 2em;
+  }
+}
+
 @include fancy-links;
 
 @include google-font("Alegreya+Sans");
@@ -116,7 +129,7 @@ a {
   @include large-screens {
     width: auto;
     max-width: $content-width;
-    
+
   }
   margin-left: auto;
   margin-right: auto;
