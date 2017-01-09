@@ -1,10 +1,39 @@
+// === THEME ===
+// Allowed values: Dark, Light, Default
+$theme: Light;
+
 //=== COLORS ===
 $text-color: #222222;
+$body-background-color: #ffffff;
 $theme-color: #170a48;
 $secondary-color: #f27731;
 $ternary-color: #ccf962;
 $link-color: $secondary-color;
 $menu-item-color: #ffffff;
+$warning-color: orange;
+$sidebar-highlight-background: #efefef;
+
+@if $theme == Dark {
+  $text-color: #ffffff;
+  $body-background-color: #22222a;
+  $theme-color: #42424a;
+  $secondary-color: #c24721;
+  $ternary-color: #698932;
+  $link-color: $secondary-color;
+  $menu-item-color: #ffffff;
+  $warning-color: red;
+  $sidebar-highlight-background: #c24721;
+} @else if $theme == Light {
+  $text-color: #000000;
+  $body-background-color: #ffffff;
+  $theme-color: #372a27;
+  $secondary-color: #d26741;
+  $ternary-color: #b9da63;
+  $link-color: $secondary-color;
+  $menu-item-color: #ffffff;
+  $warning-color: yellow;
+  $sidebar-highlight-background: #efefef;
+}
 
 // === FONTS ===
 $text-font: "Alegreya Sans", Arial, sans-serif;

@@ -23,10 +23,10 @@
   @import url(https://fonts.googleapis.com/css?family=#{$font});
 }
 @mixin warning {
-  background-color: orange;
+  background-color: $warning-color;
   color: #ffffff;
   &:hover {
-    background-color: lighten(orange, 15%);
+    background-color: lighten($warning-color, 15%);
   }
 }
 @mixin box-shadow($shadows...) {

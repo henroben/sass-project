@@ -21,20 +21,12 @@
   font-weight: bold;
 }
 
-$contrast: normal;
-
 body {
   font-family: $text-font;
-  @if $contrast == high {
-    color: #000000;
-  } @else if $contrast == low {
-    color: #999;
-  } @else {
-    color: $text-color;
-  }
-
   font-size: em(18px);
-  
+  color: $text-color;
+  background-color: $body-background-color;
+
   @include large-screens {
     font-size: 125%;
   }
@@ -138,7 +130,7 @@ a {
       border-bottom: 1px dashed #999;
 
       &:hover {
-        background-color: #efefef;
+        background-color: $sidebar-highlight-background;
       }
     }
   }
